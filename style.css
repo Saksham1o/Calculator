@@ -4,16 +4,113 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
+  
+.calculator {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+  
 table {
     border-collapse: collapse;
     margin-top: 10px;
 }
+  
+button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+    color: #333;
+    transition: background-color 0.2s, transform 0.1s;
+}
+  
+button:hover {
+    background-color: #ddd;
+}
+  
+button:active {
+    background-color: #ccc;
+    transform: scale(0.95);
+}
+  
+#display {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    padding: 5px 10px;
+    color: #333;
+    font-weight: bold;
+}
 
-.calculator {
-    border: 1px solid #ccc;
-    padding: 20px;
+/* Add some styling for the operators */
+button[onclick*="operate"] {
+    background-color: #f0f0f0; /* Light gray background */
+    color: #333;
+}
+
+button[onclick*="operate"]:hover {
+    background-color: #ddd;
+}
+
+button[onclick*="operate"]:active {
+    background-color: #ccc;
+}
+
+/* Add some styling for the equal button */
+button[onclick="calculate()"] {
+    background-color: #007bff; /* Blue background */
+    color: #fff;
+}
+
+button[onclick="calculate()"]:hover {
+    background-color: #0069d9;
+}
+
+button[onclick="calculate()"]:active {
+    background-color: #0056b3;
+}
+
+/* Add some styling for the clear button */
+button[onclick="clearDisplay()"] {
+    background-color: #dc3545; /* Red background */
+    color: #fff;
+}
+
+button[onclick="clearDisplay()"]:hover {
+    background-color: #c82333;
+}
+
+button[onclick="clearDisplay()"]:active {
+    background-color: #bd2130;
+}
+
+/* Add some styling for the calculator display */
+#display {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.made-by {
+    font-size: 24px; /* Increase font size */
+    color: #009688; /* Change text color to a nice blue-green */
+    margin-top: 30px; /* Add some space between the calculator and the text */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
 }
