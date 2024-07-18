@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    padding: 20px;
+}

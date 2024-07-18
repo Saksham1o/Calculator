@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Calculator">
+        <input type="text" id="display" disabled>
+        <table>
+            <tr>
+                <td><button oneclick="appendToDisplay('7')">7</button></td>
+                <td><button oneclick="appendToDisplay('8')">8</button></td>
+                <td><button oneclick="appendToDisplay('9')">9</button></td>
+                <td><button oneclick="clearDisplay()">C</button></td>
+            </tr>
+            <tr>
+                <td><button oneclick="appendToDisplay('4')">4</button></td>
+                <td><button oneclick="appendToDisplay('5')">5</button></td>
+                <td><button oneclick="appendToDisplay('6')">6</button></td>
+                <td><button oneclick="operate('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button oneclick="appendToDisplay('1')">1</button></td>
+                <td><button oneclick="appendToDisplay('2')">2</button></td>
+                <td><button oneclick="appendToDisplay('3')">3</button></td>
+                <td><button oneclick="operate('*')">x</button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
